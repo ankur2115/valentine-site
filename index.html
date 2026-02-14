@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- INTRO SCREEN -->
+<div id="intro">
+<h1 class="introText">For Someone Very Special ❤️</h1>
+</div>
+
+<!-- EFFECT LAYERS -->
+<div id="hearts"></div>
+<div id="cursorLight"></div>
+
+<!-- SLIDE 1 -->
+<div class="card" id="slide1">
+<div class="slideBg bg1"></div>
+
+<h1>Hey Beautiful ❤️</h1>
+<p>I didn't buy a gift… I created a memory.</p>
+
+<button onclick="nextSlide(1,2)">Start 💌</button>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="card hidden" id="slide2">
+<div class="slideBg bg2"></div>
+
+<img src="images/love.jpeg" class="photo">
+
+<h2 id="typing"></h2>
+
+<button onclick="nextSlide(2,3)">Continue ✨</button>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="card hidden" id="slide3">
+<div class="slideBg bg3"></div>
+
+<h1>Will You Be My Valentine? 💖</h1>
+
+<button class="yes" onclick="yesClicked()">YES ❤️</button>
+<button class="no" onmouseover="runAway()">NO 😜</button>
+</div>
+
+<!-- FINAL -->
+<div class="card hidden" id="slide4">
+<div class="slideBg bg4"></div>
+
+<img src="images/love.jpeg" class="photo">
+
+<h1>I LOVE YOU</h1>
+<h2>KAJU KATLI ❤️🍬</h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<audio id="bgMusic" preload="auto"></audio>
